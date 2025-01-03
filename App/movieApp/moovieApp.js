@@ -1,4 +1,4 @@
-const numberOfFilms = prompt ( "How many moovies have you watched?");
+const numberOfFilms = prompt ( "Сколько фильмов ты посмотрел");
 
 const personalMovieDB = {
         count: numberOfFilms,
@@ -10,18 +10,17 @@ const personalMovieDB = {
 
 }
 
-const firstQuestion = prompt("Один из последних просмотренныъ фильмов");
+const firstQuestion = prompt("Один из последних просмотренных фильмов");
 
 const firstQuestionMark = prompt("На сколько оцениваете этот фильм");
 
-
-
-
-const firstQuestion2 = prompt("Один из последних просмотренныъ фильмов");
+const firstQuestion2 = prompt("Один из последних просмотренных  фильмов");
 
 const firstQuestionMark2 = prompt("На сколько оцениваете этот фильм");
 
 
+personalMovieDB.movies[firstQuestion] = firstQuestionMark; 
+personalMovieDB.movies[firstQuestion2] = firstQuestionMark2;
 
-
-personalMovieDB.movies[firstQuestion] =
+console.log(personalMovieDB);
+alert(personalMovieDB);
